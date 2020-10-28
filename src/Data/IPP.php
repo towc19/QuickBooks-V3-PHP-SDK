@@ -1,5 +1,5 @@
 <?php
-namespace QuickBooksOnline\API\Data;
+namespace QuickBooksOnline\Data;
 
 /**
  * @xmlNamespace http://schema.intuit.com/finance/v3
@@ -23,7 +23,7 @@ class IPPWrapper
 		{
 			foreach($keyValInitializers as $initPropName => $initPropVal)
 			{
-				if (property_exists('IPPWrapper',$initPropName) || property_exists('QuickBooksOnline\API\Data\IPPWrapper',$initPropName))
+				if (property_exists('IPPWrapper',$initPropName) || property_exists('QuickBooksOnline\Data\IPPWrapper',$initPropName))
 				{
 					$this->{$initPropName} = $initPropVal;
 				}
